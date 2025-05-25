@@ -18,18 +18,18 @@ public static class Strings_zh_CN
     public const string S_OVERRIDE_ADB_BROWSE = "选择 ADB 可执行文件";
     public const string S_RESET_SETTINGS = "关闭应用后，所有设置将被重置。\n此操作不可逆。你确定吗？";
     public const string S_RESET_SETTINGS_TITLE = "重置应用设置";
-    public const string S_NEW_VERSION_TITLE = "New App Version";
-    public const string S_NAV_ERR_TITLE = "Navigation Error";
+    public const string S_NEW_VERSION_TITLE = "新的版本";
+    public const string S_NAV_ERR_TITLE = "路径导航错误";
     public const string S_COPY_APK_NAME = "复制包名";
     public const string S_COPY_PATH = "复制文件路径";
     public const string S_RESTORE_ALL = "还原所有项目";
     public const string S_EMPTY_TRASH = "清空回收站";
     public const string S_DELETE_ACTION = "删除";
-    public const string S_DEST_ERR = "Destination Path Error";
-    public const string S_FAILED_CONN = "failed to connect to ";
-    public const string S_FAILED_CONN_TITLE = "Connection Error";
-    public const string S_DISCONN_FAILED_TITLE = "Disconnection Error";
-    public const string S_PAIR_ERR_TITLE = "Pairing Error";
+    public const string S_DEST_ERR = "目标路径错误";
+    public const string S_FAILED_CONN = "无法连接到 ";
+    public const string S_FAILED_CONN_TITLE = "连接错误";
+    public const string S_DISCONN_FAILED_TITLE = "断开连接错误";
+    public const string S_PAIR_ERR_TITLE = "配对错误";
     public const string S_ROOT_FORBID = "Root access cannot be enabled on selected device.";
     public const string S_ROOT_FORBID_TITLE = "Root Access";
     public const string S_DEL_CONF_TITLE = "Confirm Delete";
@@ -79,8 +79,8 @@ public static class Strings_zh_CN
         """;
     public const string S_NEW_VERSION_MSG =
         """
-        Welcome to a new ADB Explorer version!
-        The release notes are available on GitHub.
+        欢迎来到 ADB Explorer 的新版本！
+        发行说明已在 Github 上发布。
         """;
 
     public const string S_CONFLICTING_APPS_TITLE = "冲突的应用程序";
