@@ -3,28 +3,28 @@ using ADB_Explorer.ViewModels;
 
 namespace ADB_Explorer.Resources;
 
-public static class Strings
+public static class Strings_zh_CN
 {
     public const string S_CC_NAME = "知识共享";
     public const string S_APACHE_NAME = "Apache";
     public const string S_ANDROID_ROBOT_LIC = "Android 机器人是从 Google 创建和共享的作品中复制或修改的，并根据 Creative Commons Attribution 3.0 License 中描述的条款使用。";
     public const string S_APK_ICON_LIC = "APK 图标根据 Apache License，版本 2.0 获得许可。";
     public const string S_ANDROID_ICONS_TITLE = "Android 机器人 图标";
-    public const string S_DISABLE_ANIMATION = "The app has many animations that are enabled as part of the fluent design.\nThe side views animation is always disabled when the app window is maximized on a secondary display.\n\n• Checking this setting disables all app animations except progress bars, progress rings, and drive usage bars.";
-    public const string S_ANIMATION_TITLE = "App Animations";
-    public const string S_MISSING_ADB_OVERRIDE = "Could not get ADB version from provided path.";
-    public const string S_ADB_VERSION_LOW_OVERRIDE = "ADB version from provided path is too low.";
+    public const string S_DISABLE_ANIMATION = "应用启用了流畅设计中的许多动画。\n当应用窗口在副显示器上最大化时，侧边视图动画始终禁用。\n\n• 勾选此设置将禁用所有动画（进度条、进度环和驱动器使用条除外）。";
+    public const string S_ANIMATION_TITLE = "应用动画";
+    public const string S_MISSING_ADB_OVERRIDE = "无法从指定路径获取 ADB 版本。";
+    public const string S_ADB_VERSION_LOW_OVERRIDE = "指定路径的 ADB 版本过低。";
     public const string S_FAIL_OVERRIDE_TITLE = "Fail to override ADB";
-    public const string S_OVERRIDE_ADB_BROWSE = "Select ADB Executable";
-    public const string S_RESET_SETTINGS = "All app settings will be reset upon closing the app.\nThis cannot be undone. Are you sure?";
-    public const string S_RESET_SETTINGS_TITLE = "Reset App Settings";
+    public const string S_OVERRIDE_ADB_BROWSE = "选择 ADB 可执行文件";
+    public const string S_RESET_SETTINGS = "关闭应用后，所有设置将被重置。\n此操作不可逆。你确定吗？";
+    public const string S_RESET_SETTINGS_TITLE = "重置应用设置";
     public const string S_NEW_VERSION_TITLE = "New App Version";
     public const string S_NAV_ERR_TITLE = "Navigation Error";
-    public const string S_COPY_APK_NAME = "Copy Package Name";
-    public const string S_COPY_PATH = "Copy Item Path";
-    public const string S_RESTORE_ALL = "Restore All Items";
-    public const string S_EMPTY_TRASH = "Empty Recycle Bin";
-    public const string S_DELETE_ACTION = "Delete";
+    public const string S_COPY_APK_NAME = "复制包名";
+    public const string S_COPY_PATH = "复制文件路径";
+    public const string S_RESTORE_ALL = "还原所有项目";
+    public const string S_EMPTY_TRASH = "清空回收站";
+    public const string S_DELETE_ACTION = "删除";
     public const string S_DEST_ERR = "Destination Path Error";
     public const string S_FAILED_CONN = "failed to connect to ";
     public const string S_FAILED_CONN_TITLE = "Connection Error";
@@ -83,7 +83,7 @@ public static class Strings
         The release notes are available on GitHub.
         """;
 
-    public const string S_CONFLICTING_APPS_TITLE = "Conflicting Apps";
+    public const string S_CONFLICTING_APPS_TITLE = "冲突的应用程序";
 
     public static string S_CONFLICTING_APPS(IEnumerable<string> apps) =>
         $"File Explorer monitoring is not available due to the following apps running:\n\n{string.Join('\n', apps)}";
