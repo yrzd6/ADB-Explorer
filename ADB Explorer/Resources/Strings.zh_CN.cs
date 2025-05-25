@@ -30,37 +30,37 @@ public static class Strings_zh_CN
     public const string S_FAILED_CONN_TITLE = "连接错误";
     public const string S_DISCONN_FAILED_TITLE = "断开连接错误";
     public const string S_PAIR_ERR_TITLE = "配对错误";
-    public const string S_ROOT_FORBID = "Root access cannot be enabled on selected device.";
-    public const string S_ROOT_FORBID_TITLE = "Root Access";
-    public const string S_DEL_CONF_TITLE = "Confirm Delete";
-    public const string S_PERM_DEL = "Permanently Delete";
+    public const string S_ROOT_FORBID = "无法在所选设备上启用 Root 权限。";
+    public const string S_ROOT_FORBID_TITLE = "Root 权限";
+    public const string S_DEL_CONF_TITLE = "确认删除";
+    public const string S_PERM_DEL = "永久删除";
     public const string S_CREATE_ERR_TITLE = "Create Error";
     public const string S_RESTORE_CONF_TITLE = "Restore Conflicts";
-    public const string S_CONF_UNI_TITLE = "Confirm Uninstall";
-    public const string S_INSTALL_APK = "Select packages to install";
-    public const string S_REM_EMU = "Kill Emulator";
-    public const string S_REM_HIST_DEV = "Remove Device";
-    public const string S_REM_DEV = "Disconnect Device";
-    public const string S_FILE_OP_TOOLTIP = "File Operations";
+    public const string S_CONF_UNI_TITLE = "确认卸载";
+    public const string S_INSTALL_APK = "选择要安装的包";
+    public const string S_REM_EMU = "终止模拟器";
+    public const string S_REM_HIST_DEV = "删除设备";
+    public const string S_REM_DEV = "断开设备连接";
+    public const string S_FILE_OP_TOOLTIP = "文件操作";
     public const string S_PUSH_PKG = "Install Packages";
-    public const string S_NEW_DEVICE_TIP = "Pair and/or connect a WiFi device (without using mDNS)";
-    public const string S_RESTART_APP = "Restart app for changes to take effect";
-    public const string S_READ_FILE_ERROR_TITLE = "Error Reading File";
-    public const string S_READ_FILE_ERROR = "Could not pull file in order to read it.";
-    public const string S_WRITE_FILE_ERROR_TITLE = "Error Writing File";
-    public const string S_WRITE_FILE_ERROR = "Could not push file back to device.";
-    public const string S_DISABLE_MDNS = "ADB server needs to be restarted in order to disable mDNS.";
+    public const string S_NEW_DEVICE_TIP = "配对并连接 WiFi 设备（不使用 mDNS）";
+    public const string S_RESTART_APP = "重启应用以使更改生效";
+    public const string S_READ_FILE_ERROR_TITLE = "文件读取错误";
+    public const string S_READ_FILE_ERROR = "无法拉取文件以读取内容。";
+    public const string S_WRITE_FILE_ERROR_TITLE = "文件写入错误";
+    public const string S_WRITE_FILE_ERROR = "无法将文件推送回设备。";
+    public const string S_DISABLE_MDNS = "需要重启 ADB 服务以禁用 mDNS。";
     public const string S_DISABLE_MDNS_TITLE = "禁用 mDNS";
-    public const string S_WSA_PKG_TIP = "Launch WSA in background";
-    public const string S_WSA_LAUNCH = "Select Launch if ADB is already authorized in WSA.\nTo approve ADB, open WSA advanced settings.";
-    public const string S_PULL_ACTION = "Pull";
-    public const string S_PULL_ACTION_LINK = "Pull (Link Target)";
-    public const string S_RESTORE_ACTION = "Restore";
-    public const string S_DISK_USAGE_PROGRESS = "Push/pull progress is displayed in total bytes transferred.\nPercentage is available only when total size is known.";
-    public const string S_DEPLOY_REDIRECTION_TITLE = "Deploy AdbProgressRedirection.exe";
+    public const string S_WSA_PKG_TIP = "在后台启动 WSA";
+    public const string S_WSA_LAUNCH = "若 ADB 已在 WSA 中授权，请直接点击启动。\n如需授权 ADB，请打开 WSA 高级设置。";
+    public const string S_PULL_ACTION = "拉取文件";
+    public const string S_PULL_ACTION_LINK = "拉取文件 (Link Target)";
+    public const string S_RESTORE_ACTION = "恢复";
+    public const string S_DISK_USAGE_PROGRESS = "推送/拉取进度以传输的总字节数显示。\n只有在知道总大小时才会显示百分比进度。"; 
+    public const string S_DEPLOY_REDIRECTION_TITLE = "部署 AdbProgressRedirection.exe";
     public const string S_DISK_USAGE_PROGRESS_TITLE = "Disk Usage Only";
-    public const string S_PROGRESS_METHOD_TITLE = "Progress Method";
-    public const string S_DEPLOY_REDIRECTION_ERROR = "Unable to deploy executable.\nDisk usage progress method will be used instead.\n\n";
+    public const string S_PROGRESS_METHOD_TITLE = "进度显示方式";
+    public const string S_DEPLOY_REDIRECTION_ERROR = "无法部署可执行文件。\n将改用磁盘使用量进度显示方式。\n\n";
     public const string S_REDIRECTION = "Progress Redirection ";
     public const string S_LS_ERROR_TITLE = "List Directory Error";
     public const string S_WIN_ROOT_ILLEGAL_TITLE = "Pull To Windows Drive Root";
@@ -112,10 +112,10 @@ public static class Strings_zh_CN
         $"    {S_DISK_USAGE_PROGRESS.Replace("\n", "\n    ")}";
 
     public static string S_NEW_VERSION(Version newVersion) =>
-        $"A new {Properties.Resources.AppDisplayName}, version {newVersion}, is available";
+        $"{Properties.Resources.AppDisplayName} 有新版本 {newVersion} 可用";
 
     public static string S_ITEMS_DESTINATION(bool multipleItems, FileClass singleItem) =>
-        "Select destination for " + (multipleItems ? "multiple items" : singleItem.DisplayName);
+        "为 " + (multipleItems ? "多个项目" : singleItem.DisplayName) + " 选择目标文件夹";
 
     public static string S_PUSH_BROWSE_TITLE(bool isFolderPicker, string targetName)
     {
@@ -126,10 +126,10 @@ public static class Strings_zh_CN
     }
 
     public static string S_DELETE_CONF(bool permanent, string deletedString) =>
-        $"The following will be{(permanent ? " permanently" : "")} deleted:\n{deletedString}";
+        $"以下内容将{(permanent ? "被永久" : "")}删除：\n{deletedString}";
 
     public static string S_NEW_ITEM(bool isFolder) =>
-        $"New {(isFolder ? "Folder" : "File")}";
+        $"新建{(isFolder ? "文件夹" : "文件")}";
 
     public static string S_CONFLICT_ITEMS(int count) =>
         $"There {(count > 1 ? "are" : "is")} {count} conflicting item{(count > 1 ? "s" : "")}";
